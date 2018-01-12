@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{jarticle}
+\documentclass[a4paper,12pt]{ujarticle}
 
 % レイアウト
 \setlength{\hoffset}{0cm}
@@ -34,7 +34,7 @@
 % 擬似コード作成用
 \usepackage[ruled,vlined]{algorithm2e}
 \usepackage{setspace}
-\input{../sty/jdummy.def}
+%\input{../sty/jdummy.def}
 
 % カウンタの設定
 \setcounter{section}{0}
@@ -54,7 +54,7 @@
 
 % 表紙
 \title{卒業論文\\
-三次元計測データを用いたセンサキャリブレーションdee\\
+汎用フレームと駆動モジュールを用いた\\環境適応型計測ロボットの開発\\
 % {\large No title}
 }
 \author{\vspace{20mm}\\
@@ -62,14 +62,42 @@
 九州工業大学\ \hspace{0mm} 工学部\\
 機械知能工学科\ \hspace{0mm} 知能制御工学コース \\
 \vspace{0mm}\\
-学籍番号：\ 13104106\\
-提出者氏名：\ 二宮 \hspace{0mm} 悠二\\\vspace{5mm}\\ }
-\date{平成29年\ 2月\ 20日}
+学籍番号：\ 16104313\\
+提出者氏名：\ 山下 \hspace{0mm} 翔\\\vspace{5mm}\\ }
+\date{平成29年\ 月\ 日}
 
 % ドキュメントの開始
 \begin{document}
 % 表紙
 \titlepage
 \maketitle
+\thispagestyle{empty} \newpage
+\pagenumbering{roman}
+\setcounter{page}{1}
+\parindent = 0pt % 字下げOFF
+
+%---------------------------------------
+% 概要
+\begin{abstract}
+
+\end{abstract}
 \thispagestyle{empty}
 \newpage
+%---------------------------------------
+% 目次
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+%---------------------------------------
+% section 1
+\section{序論}
+% section 1-1
+\subsection{研究背景}
+
+% section 1-2
+\subsection{先行研究}
+
+%---------------------------------------
+% section 2
+\section{環境計測システム概要}
+\end{document}
