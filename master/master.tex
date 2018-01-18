@@ -1,0 +1,104 @@
+\documentclass[a4paper,12pt]{ujarticle}
+
+% レイアウト
+\setlength{\hoffset}{0cm}
+\setlength{\oddsidemargin}{-3mm}
+\setlength{\evensidemargin}{-3cm}
+\setlength{\marginparsep}{0cm}
+\setlength{\marginparwidth}{0cm}
+\setlength{\textheight}{24.7cm}
+\setlength{\textwidth}{17cm}
+\setlength{\topmargin}{-45pt}
+
+\renewcommand{\baselinestretch}{1.6}
+\renewcommand{\floatpagefraction}{1}
+\renewcommand{\topfraction}{1}
+\renewcommand{\bottomfraction}{1}
+\renewcommand{\textfraction}{0}
+
+% パッケージ
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amsmath,amssymb,epsfig}
+\usepackage{eucal}
+\usepackage{bm}
+\usepackage{ascmac}
+\usepackage{pifont}
+\usepackage{multirow}
+\usepackage{enumerate}
+\usepackage{cases}
+\usepackage{type1cm}
+\usepackage{cancel}
+\usepackage{url}
+\usepackage{color}
+
+% 擬似コード作成用
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{setspace}
+%\input{../sty/jdummy.def}
+
+% カウンタの設定
+\setcounter{section}{0}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{equation}{0}
+
+% キャプションの図をFigに変更
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\tablename}{Tab.}
+
+% 式番号を式(章番号.番号)に
+\makeatletter
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\@addtoreset{equation}{section}
+\makeatother
+
+% 表紙
+\title{卒業論文\\
+組換え可能な汎用フレームと駆動モジュールを有した\\環境計測ロボットの開発\\
+% {\large No title}
+}
+\author{\vspace{20mm}\\
+指導教員：\ 西田 \hspace{0mm} 健 准教授\\
+九州工業大学\ \hspace{0mm} 工学部\\
+機械知能工学科\ \hspace{0mm} 知能制御工学コース \\
+\vspace{0mm}\\
+学籍番号：\ 16104313\\
+提出者氏名：\ 山下 \hspace{0mm} 翔\\\vspace{5mm}\\ }
+\date{平成29年\ 月\ 日}
+
+% ドキュメントの開始
+\begin{document}
+% 表紙
+\titlepage
+\maketitle
+\thispagestyle{empty} \newpage
+\pagenumbering{roman}
+\setcounter{page}{1}
+\parindent = 0pt % 字下げOFF
+
+%---------------------------------------
+% 概要
+\begin{abstract}
+
+\end{abstract}
+\thispagestyle{empty}
+\newpage
+%---------------------------------------
+% 目次
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+%---------------------------------------
+% section 1
+\section{序論} \label{intro}
+\input{intro/intro.tex}
+% section 1-1
+%\subsection{研究背景}
+
+% section 1-2
+%\subsection{先行研究}
+
+%---------------------------------------
+% section 2
+\section{環境計測システム概要}
+\end{document}
