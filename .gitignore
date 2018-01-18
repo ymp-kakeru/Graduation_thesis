@@ -4,4 +4,4 @@
 *.fdb_latexmk
 *.log
 *.toc
-master.synctex.gz
+*.synctex.gz
