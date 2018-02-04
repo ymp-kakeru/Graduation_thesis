@@ -1,10 +1,41 @@
+% \usepackage[dvipdfmx]{graphicx}
 \subsection{研究背景}
-モジュール構造の利点について述べるのか，林業について述べるのか…．計測ロボットの必要性について書かなければならないか．検討中．
+% モジュール構造の利点について述べるのか，林業について述べるのか…．計測ロボットの必要性について書かなければならないか．検討中．
+\par 
 
 \subsection{先行研究}
-\ \ 前年度までに開発されたロボットが\label{six_rober}である.森林環境を想定しており,不整地での踏破能力を高めるためにロッカーボギーサスペンションを採用した六輪ロボットである.
+\ \ 前年度までに開発されたロボットがFig.\ref{six_rober}である.森林環境を想定しており,不整地での踏破能力を高めるためにロッカーボギーサスペンションを採用した六輪ロボットである.
 3D LiDARを搭載し,森林環境において誤差15cm以下の高精度の三次元地図の作成に成功した.\cite{arita}\\
-\ \ しかしながら,この六輪ロボットには複数の問題点が挙げられた.まず,ロボットのサイズが963[mm] $\times$ 962[mm]と森林環境を想定している割には大きい点.さらに重さが約50[kg]あるために取り扱いが非常に不便である点.また,最大の問題として駆動部の構造上,走行困難となる場面が多々あるという点である.\label{problem}
+\ \ しかしながら,この六輪ロボットには複数の問題点が挙げられた.まず,ロボットのサイズが963[mm] $\times$ 962[mm]と森林環境を想定している割には大きい点.さらに重さが約50[kg]あるために取り扱いが非常に不便である点.また,最大の問題として駆動部の構造上,走行困難となる場面が多々あるという点である.(Fig.\ref{problem})
+
+
+\begin{figure}[hb]
+	\centering
+	\includegraphics[clip,scale=0.08]{./figure/sixrob.eps}
+	\caption{前年度 六輪ロボット}
+	\label{six_rober}
+\end{figure}
+\newpage
+\begin{figure}[ht]
+	\centering
+	\begin{tabular}{cc}
+
+		\begin{minipage}{0.5\hsize}
+		\centering
+		\includegraphics[clip,scale=0.5]{./figure/stac_cad.eps}
+		\hspace{1.6cm}
+		\end{minipage}
+
+		\begin{minipage}{0.5\hsize}
+		\centering
+		\includegraphics[clip,scale=1.0]{./figure/stac_wheel.eps}
+		\hspace{1.6cm}
+		\end{minipage}
+
+	\end{tabular}	
+	\caption{前年度までの駆動モジュールの問題点}
+	\label{problem}
+\end{figure}
 
 \subsection{研究目的}
 \ \ 前述の問題点を考慮し,本研究ではロボットの小型化および構造の簡略化と改善を目的とした.そのための試みとして,ロボットの構造を
