@@ -39,12 +39,19 @@
 	\label{iMCs01}
 \end{figure}
 
-\subsubsection{電源}
-石川鉄鋼所にきかなければー
+% \subsubsection{電源}
+% 石川鉄鋼所にきかなければー
 %--------------------------------------------------------------------------------------------------
+\newpage
 \subsection{汎用フレーム} \label{frame}
+\par 本研究で開発する移動ロボットには，駆動モジュールの増減に合わせて走行アルゴリズムを2輪・4輪・6輪と変更できるような汎用性が求められる．そこで，フレームの形状をFig.\ref{geneframe_fig}のようなX字にすることで追加パーツを組込むだけで駆動モジュールの数を変更できるようにした．実際に製作したフレームがFig.\ref{geneframe_cmp}である．
 
-
+\begin{figure}[hb]
+	\centering
+	\includegraphics[clip,scale=0.8]{./figure/geneframe_fig.eps}
+	\caption{汎用フレーム 概念図}
+	\label{geneframe_fig}
+\end{figure}
 
 
 
@@ -90,7 +97,7 @@
 
 \begin{figure}[hb]
 	\centering
-	\includegraphics[clip,scale=0.2]{./figure/te-38f16-24-64.eps}
+	\includegraphics[clip,scale=0.6]{./figure/te-38f16-24-64.eps}
 	\caption{DCモータ}
 	\label{dc-motor}
 \end{figure}
@@ -103,15 +110,14 @@
 		98.5 & 1881.6 & 2.3 & 77.0 & 360.0 \\ \hline
 	\end{tabular}
 	\label{motor_spec}
-
+\end{table}
+\newpage
 \subsubsection{ロータリエンコーダ}
 \par 車輪回転速度制御用に，各駆動モジュールにはomron製インクリメンタル型ロータリエンコーダE6A2-CW3E(Fig.\ref{encoder_fig})を搭載している．仕様についてTab.\ref{encoder_spec}にまとめる．
 
-
-\end{table}
 \begin{figure}[hb]
 	\centering
-	\includegraphics[clip,scale=0.5]{./figure/e6a2-c.eps}
+	\includegraphics[clip,scale=1.0]{./figure/e6a2-c.eps}
 	\caption{インクリメンタル型ロータリエンコーダ}
 	\label{encoder_fig}
 \end{figure}
@@ -160,3 +166,18 @@
 	\end{tabular}
 	\label{yvt_spec}
 \end{table}
+%-----------------------------------------------------------------------------------
+\newpage
+\subsection{システム全体構成}
+\subsubsection{ハードウェア構成}
+\par ハードウェアの接続および構成についてFig.\ref{mod_sys_fig}に示す．また，完成した機体をFig.\ref{mod_robot_comp}に示す．
+
+\begin{figure}[b]
+	\centering
+	\includegraphics[clip,scale=0.8]{./figure/mod_sys.eps}
+	\caption{システム全体構成図}
+	\label{mod_sys_fig}
+\end{figure}
+
+\subsubsection{ソフトウェア構成}
+\par 
